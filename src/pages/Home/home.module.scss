@@ -1,0 +1,114 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .subContainer {
+    max-width: 900px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .desc {
+    color: grey;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .videoContainer {
+    margin-top: 3rem;
+  
+    & video {
+      width: 100%;
+      border-radius: 25px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+  }
+  
+  .wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .gradientText {
+    font-size: 3rem;
+    font-weight: bold;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 400% 400%;
+    animation: gradientAnimation 12s ease infinite;
+    background-image: linear-gradient(96deg, #ffccf8 0%, #ffc0ad 26.85%, #ffd78a 59.66%, #fef571 100%);
+    position: relative;
+  }
+  .pageHeading {
+    font-size: 4rem;
+  }
+
+  .heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size: 400% 400%;
+    height: 100%;
+    background: radial-gradient(100% 140% at 60% -10%, rgba(0, 0, 0, 0) 0%, #000 75%);
+    -webkit-background-clip: text;
+    color: transparent;
+    mix-blend-mode: multiply;
+  }
+  
+  .text {
+    max-width: 600px;
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+  
+    &::before {
+      z-index: 2;
+      line-height: 1;
+      content: "Hi! there, John What would you like to know?";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: radial-gradient(100% 140% at 90% 30%, rgba(0, 0, 0, 0) 0%, #000 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  
+    &::after {
+      line-height: 1;
+      content: "Hi! there, John What would you like to know?";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(96deg, #3c3eff 0%, #cf1fe6 26.85%, #e31759 59.66%, #9edd8a 100%);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradientAnimation 12s ease infinite;
+    }
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

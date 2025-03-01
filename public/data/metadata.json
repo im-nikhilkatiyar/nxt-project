@@ -1,0 +1,20 @@
+{
+    "blogPost": {
+      "title": "How to use Next.js",
+      "description": "Learn how to use Next.js for SSR, SSG, and SEO.",
+      "image": "https://example.com/images/nextjs.jpg",
+      "url": "https://example.com/blog/how-to-use-nextjs"
+    },
+    "homePage": {
+      "title": "Welcome to My Website",
+      "description": "Explore amazing content and resources on Next.js.",
+      "image": "https://example.com/images/homepage.jpg",
+      "url": "https://example.com/"
+    },
+    "default": {
+        "title": "SI2025",
+        "description": "Si 2025",
+        "image": "https://example.com/images/homepage.jpg",
+        "url": "https://example.com/"
+    }
+}

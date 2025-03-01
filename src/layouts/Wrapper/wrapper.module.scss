@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.05);
+
+  }
+  
+  .content {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
