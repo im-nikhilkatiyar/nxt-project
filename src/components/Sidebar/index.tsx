@@ -48,7 +48,7 @@ const Sidebar: React.FC = () => {
       hasSubMenu: false,
     },
   ]);
-  const [toggle, setToggle] = useState<boolean>(false);
+  const [toggle] = useState<boolean>(false);
 
   const settingState = menuList.find(
     (list) => list.title.toLowerCase() === 'setting'
