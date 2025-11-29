@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+// import '@simplifyingcalculation/sba-504-widget';
 import "../styles/globals.scss";
 import createEmotionCache from "../utils/createEmotionCache";
 import createEmotionServer from "@emotion/server/create-instance";
@@ -33,8 +34,7 @@ export default function RootLayout({
         
         {/* Meta tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="UTF-8" />
-        
+        <meta charSet="UTF-8" />        
         {/* Inject Emotion Critical CSS */}
         {emotionStyles.styles.map((style) => (
           <style
@@ -46,6 +46,7 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+          {/* <sba-504-widget license-key="71292582-1905-0b92a3ef0ff1" /> */}
       </body>
     </html>
   );
